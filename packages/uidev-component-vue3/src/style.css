@@ -1,0 +1,18 @@
+/* Opus-X tokens shipped with uidev-component-vue3 (app does not use Tailwind). */
+:root {
+  --ox-color-bg: #0f1419;
+  --ox-color-surface: #1a222c;
+  --ox-color-surface-elevated: #243040;
+  --ox-color-border: #2e3a48;
+  --ox-color-text: #e8eef4;
+  --ox-color-text-muted: #8b9aab;
+  --ox-color-accent: #3d9cf0;
+  --ox-color-accent-hover: #5aadf5;
+  --ox-color-danger: #e85d5d;
+  --ox-color-success: #3dbf8f;
+  --ox-color-warning: #e6a23c;
+  --ox-radius: 6px;
+  --ox-font-sans: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --ox-font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --ox-shadow: 0 8px 24px rgb(0 0 0 / 0.35);
+}

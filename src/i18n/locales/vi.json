@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "Opus-X Console",
+    "tagline": "Greenfield Vue 3"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "catalog": "Danh mục",
+    "performance": "Performance Testing",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất"
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "sso": "Đăng nhập SSO",
+    "error": "Sai thông tin đăng nhập",
+    "ssoProcessing": "Đang hoàn tất SSO…"
+  },
+  "catalog": {
+    "title": "Danh mục",
+    "create": "Thêm mới",
+    "empty": "Chưa có dữ liệu",
+    "name": "Tên",
+    "description": "Mô tả",
+    "save": "Lưu",
+    "saved": "Đã lưu"
+  },
+  "perf": {
+    "title": "Performance Testing (Live)",
+    "connecting": "Đang kết nối STOMP…",
+    "connected": "Đã kết nối",
+    "disconnected": "Mất kết nối",
+    "flagOff": "realtime_v3_enabled đang tắt — dùng Vue 2 hoặc bật flag",
+    "mockMode": "Luồng mock (chưa gắn broker)"
+  },
+  "errors": {
+    "forbidden": "Bạn không có quyền truy cập",
+    "notFound": "Không tìm thấy trang"
+  }
+}

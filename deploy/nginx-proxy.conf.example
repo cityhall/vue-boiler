@@ -1,0 +1,33 @@
+# Upstream example for path-based Vue2/Vue3 cutover
+# Copy and adapt — do not deploy verbatim without review.
+
+upstream vue2_upstream { server vue2:80; }
+upstream vue3_upstream { server vue3:80; }
+
+server {
+  listen 443 ssl http2;
+  server_name app.example.internal;
+
+  # Ops toggles (prefer dynamic config / consul / feature service in real env)
+  set $catalog_v3 1;
+  set $perf_v3 0;
+
+  location /api/ {
+    proxy_pass http://backend:8080/;
+  }
+
+  location /catalog {
+    if ($catalog_v3 = 0) { proxy_pass http://vue2_upstream; break; }
+    proxy_pass http://vue3_upstream;
+  }
+
+  location /perf/live {
+    if ($perf_v3 = 0) { proxy_pass http://vue2_upstream; break; }
+    proxy_pass http://vue3_upstream;
+  }
+
+  location / {
+    # Until hard Go-Live, default legacy
+    proxy_pass http://vue2_upstream;
+  }
+}

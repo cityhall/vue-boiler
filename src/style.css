@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ox-font-sans);
+  background:
+    radial-gradient(ellipse 120% 80% at 10% -20%, rgb(61 156 240 / 0.18), transparent 50%),
+    radial-gradient(ellipse 80% 60% at 100% 0%, rgb(61 191 143 / 0.1), transparent 45%),
+    var(--ox-color-bg);
+  color: var(--ox-color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--ox-color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--ox-color-accent-hover);
+}
+
+#app {
+  min-height: 100vh;
+}

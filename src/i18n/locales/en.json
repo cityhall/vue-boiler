@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "Opus-X Console",
+    "tagline": "Vue 3 greenfield"
+  },
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "performance": "Performance Testing",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "auth": {
+    "login": "Sign in",
+    "username": "Username",
+    "password": "Password",
+    "sso": "Continue with SSO",
+    "error": "Invalid credentials",
+    "ssoProcessing": "Completing SSO…"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "create": "New item",
+    "empty": "No items yet",
+    "name": "Name",
+    "description": "Description",
+    "save": "Save",
+    "saved": "Saved"
+  },
+  "perf": {
+    "title": "Performance Testing (Live)",
+    "connecting": "Connecting to STOMP…",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "flagOff": "realtime_v3_enabled is off — use Vue 2 or enable flag",
+    "mockMode": "Mock stream (no broker)"
+  },
+  "errors": {
+    "forbidden": "You do not have permission",
+    "notFound": "Page not found"
+  }
+}
